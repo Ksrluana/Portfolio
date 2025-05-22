@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luana - Meus Projetos e Links</title>
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(135deg, #360233, #9b59b6);
+      --primary-color: #360233;
+      --bg-opacity: rgba(0, 0, 0, 0.6);
+      --text-color: #fff;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--primary-gradient);
+      color: var(--text-color);
+      font-family: var(--font-family);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: var(--bg-opacity);
+      border-radius: 20px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      user-select: none;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--text-color);
+      display: inline-block;
+      padding-bottom: 0.3em;
+      margin: 2rem 0 1rem;
+      user-select: text;
+      letter-spacing: 0.05em;
+    }
+
+    .link-button {
+      display: block;
+      background: var(--text-color);
+      color: var(--primary-color);
+      font-weight: 700;
+      padding: 15px 0;
+      margin: 10px 0;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease,
+        transform 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      user-select: text;
+    }
+
+    .link-button:hover,
+    .link-button:focus {
+      background: var(--primary-color);
+      color: var(--text-color);
+      transform: scale(1.05);
+      outline: none;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 1.5rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+
+      .link-button {
+        font-size: 1rem;
+        padding: 12px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Conteúdo principal">
+    <h1>Luana Kesia👩‍💻✨</h1>
+    <p>Estudante de Engenharia de Software no quarto período, com foco em desenvolvimento web e mobile</p>
+
+    <section aria-labelledby="links-title">
+      <h2 id="links-title" class="section-title">LINKS</h2>
+      <a
+        class="link-button"
+        href="https://github.com/Ksrluana"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+      <a
+        class="link-button"
+        href="https://www.linkedin.com/in/luana-silva-dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+    </section>
+
+    <section aria-labelledby="projetos-title">
+      <h2 id="projetos-title" class="section-title">🚀 Meus Projetos</h2>
+      <a class="link-button" href="#" target="_blank" rel="noopener noreferrer">Primeiros códigos em HTML</a>
+      <a class="link-button" href="#" target="_blank" rel="noopener noreferrer">App em desenvolvimento</a>
+    </section>
+  </main>
+</body>
+</html>
